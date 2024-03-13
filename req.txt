@@ -1,0 +1,1 @@
+mongodb+srv://growtech180:N2Wt78vK2Rc4WKVi@votingsystem.m9g9xge.mongodb.net/?retryWrites=true&w=majority&appName=VotingSystem
