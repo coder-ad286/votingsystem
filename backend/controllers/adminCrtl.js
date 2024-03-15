@@ -15,6 +15,7 @@ export const createAdmin = asyncError(async(req,res,next)=>{
 
 export const loginAdmin = asyncError(async(req,res,next)=>{
     const {email , password} = req.body;
+    console.log(email,password);
     if (checkEmpty([email, password])) {
         return next(new ErrorHandler("All Fields Are Must Required....!", 400))
     }

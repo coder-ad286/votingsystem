@@ -7,6 +7,7 @@ import adminRouter from "./routes/adminRoute.js";
 import error from "./middlewares/error.js";
 // import seedData from "./utils/seeder.js";
 import cookiParser from 'cookie-parser'
+import cors from 'cors';
 
 dotenv.config()
 const app = express()
@@ -16,6 +17,7 @@ const PORT = process.env.PORT
 connectDatabase()
 app.use(express.json())
 app.use(cookiParser())
+app.use(cors())
 
 //ROUTES
 app.use("/api/v1/user/",userRouter)

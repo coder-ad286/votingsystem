@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 const Home = () => {
-  const [component, setComponent] = useState(0)
+  const [component, setComponent] = useState(2)
   const navigate = useNavigate()
   return (
 

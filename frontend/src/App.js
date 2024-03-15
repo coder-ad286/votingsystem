@@ -2,8 +2,9 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './screens/Home'
 import Result from './screens/Result'
-import Admin from './screens/Admin'
 import PageNotFound from './screens/PageNotFound'
+import AdminLogin from './screens/admin/AdminLogin'
+import AdminPanel from './screens/admin/AdminPanel'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/result' element={<Result/>} />
-          <Route path='/admin' element={<Admin/>} />
+          <Route path='/admin-login' element={<AdminLogin/>} />
+          <Route path='/admin-panel' element={<AdminPanel/>} />
           <Route path='*' element={<PageNotFound/>} />
         </Routes>
     </main>
